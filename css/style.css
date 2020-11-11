@@ -100,7 +100,7 @@ nav a:hover, nav a:focus {
 
 /* The front page about section */
 .frontpage {
-  background-image: url('./media/background-homepage2.jpeg');
+  background-image: url('../../../media/background-homepage2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,7 +141,7 @@ nav a:hover, nav a:focus {
 }
 
 #additional-section {
-  background-image: url('./media/world-map.png');
+  background-image: url('../../../media/world-map.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

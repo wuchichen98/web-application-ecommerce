@@ -81,6 +81,7 @@ OUTPUT;
             echo '<div class="service-form">';
             echo "<input type=\"hidden\" name=\"id\" value=\"$getId\">";
             echo "<input type=\"hidden\" id=\"single-price\" value=\"$servicePrice\">";
+          
             echo '<div class="option-model">Selected Service:<br>';
             // code to check that $pid exists in $products array
             echo '<select name="oid">';
@@ -120,10 +121,5 @@ OUTPUT;
 
 </div>
 
-<?php preShow($all_services); ?>
 
 <?php end_module(); ?>
-<?php
-  error_reporting( E_ERROR | E_WARNING | E_PARSE );
-?>
-<?php printMyCode(); ?>

@@ -13,7 +13,7 @@
     <ul class="services-box">
       <li>
         <div class="box">
-          <img src="../media/electrical1.jpg" alt="An electrical panel" height="150"/>
+          <img src="media/electrical1.jpg" alt="An electrical panel" height="150"/>
           <!-- Image from: https://mistersparkyelectricsc.com/blog/electrical-issues-solutions-electrical-repair-charleston-sc/ -->
           <h3>Electrical</h3>
           <p>Installation of powerpoints or electrical panel/system upgrade.</p>
@@ -21,14 +21,14 @@
       </li>
       <li>
         <div class="box">
-          <img src="./media/light3.png" alt="A feature light" height="150"/>
+          <img src="media/light3.png" alt="A feature light" height="150"/>
           <h3>Lighting</h3>
           <p>Downlights, feature lights, chandelier or any of your choice.</p>
         </div>
       </li>
       <li>
         <div class="box">
-          <img src="../media/camera2.jpg" alt="A security camera" height="150"/>
+          <img src="media/camera2.jpg" alt="A security camera" height="150"/>
           <!-- Image from: http://virtuatechnologies.com.na/services/surveillance-access-control-systems/ -->
           <h3>Security</h3>
           <p>Installation of security cameras or security alarm.</p>
@@ -36,7 +36,7 @@
       </li>
       <li>
         <div class="box">
-          <img src="../media/dataphone.jpg" alt="A data cable" height="150"/>
+          <img src="media/dataphone.jpg" alt="A data cable" height="150"/>
           <!-- Image from: https://cdn3.volusion.com/xn9m9.7kbh9/v/vspfiles/photos/950-990-4.jpg -->
           <h3>Data/Phone</h3>
           <p>RJ45 ethernet and RJ11 telephone line. Contact us for more details.</p>
@@ -81,14 +81,8 @@
     </section>
   </div>
 </section>
-    
 
 <!-- main ends here: no need to write it -->
 <?php
   end_module();
 ?>
-    .frontpage {
-  background-image: url('../media/background-homepage2.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}

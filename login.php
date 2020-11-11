@@ -33,9 +33,3 @@
 
 
 <?php end_module(); ?>
-<?php
-  // table('GET Data',$_GET);
-  // table('POST Data',$_POST);
-  error_reporting( E_ERROR | E_WARNING | E_PARSE );
-?>
-<?php printMyCode(); ?>

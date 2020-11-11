@@ -119,27 +119,27 @@
     <form action="checkout.php"  method="post" id="checkoutForm">
       <div class="field-wrap">
         <div>Name:</div>
-        <input type="text" name="Name" value="<?php echo $name; ?>" > <?php echo $nameError;?>
+        <input type="text" name="Name" value="<?php echo $name; ?>" required> <?php echo $nameError;?>
       </div>
       <div class="field-wrap">
         <div>Email:</div>
-        <input type="email" name="Email" value="<?php echo $email; ?>" > <?php echo $emailError;?>
+        <input type="email" name="Email" value="<?php echo $email; ?>" required> <?php echo $emailError;?>
       </div>
       <div class="field-wrap">
         <div>Address:</div>
-        <textarea name="Address" form="checkoutForm" rows="3" ><?php echo $address; ?></textarea> <?php echo $addressError;?>
+        <textarea name="Address" form="checkoutForm" rows="3" required><?php echo $address; ?></textarea> <?php echo $addressError;?>
       </div>
       <div class="field-wrap">
         <div>Mobile Number:</div>
-        <input type="text" name="Mobile" value="<?php echo $mobile; ?>" > <?php echo $mobileError;?>
+        <input type="text" name="Mobile" value="<?php echo $mobile; ?>" required> <?php echo $mobileError;?>
       </div>
       <div class="field-wrap">
         <div>Credit Card Number:</div>
-        <input type="text" id="card-number" name="CreditCard" value="<?php echo $creditCard; ?>" onInput="checkCardType()"  /> <span id="card-type"></span><?php echo $creditCardError;?>
+        <input type="text" id="card-number" name="CreditCard" value="<?php echo $creditCard; ?>" onInput="checkCardType()" required> <span id="card-type"></span><?php echo $creditCardError;?>
       </div>
       <div class="field-wrap">
         <div>Expiry Date:</div>
-        <input type="date" name="CreditCardExpiry" value="<?php echo $creditCardExpiry; ?>" > <?php echo $cardExpiryError;?>
+        <input type="date" name="CreditCardExpiry" value="<?php echo $creditCardExpiry; ?>" required> <?php echo $cardExpiryError;?>
       </div>
 
       <button type="submit" id="process-payment">Process the payment</button>
@@ -150,9 +150,3 @@
 
 
 <?php end_module(); ?>
-<?php
-  // table('GET Data',$_GET);
-  // table('POST Data',$_POST);
-  error_reporting( E_ERROR | E_WARNING | E_PARSE );
-?>
-<?php printMyCode(); ?>

@@ -1,7 +1,7 @@
 ID	OID	Title	Description	Option	Price	ImagePath
-E1	PPT	Electrical	Electrical services such as installation of power points, maintenance of electrical panels, and so on. A minimum of 1 order of service is required to process and include free installation.*	Powerpoint and Installation	200.00	src="../../media/powerpoint.jpeg" alt="Powerpoint Installation"
-E1	PNL	Electrical	Electrical services such as installation of power points, maintenance of electrical panels, and so on. A minimum of 1 order of service is required to process and include free installation.*	Electrical Panel Maintenance	200.00	src="../../media/electrical1.jpg" alt="Electrical Panel"
-L1	DWN	Lighting	Installation of your choice of lights from the following types.	Downlight and Installation	150.00	src="../../media/downlight.jpg" alt="Downlights"
-L1	PEN	Lighting	Installation of your choice of lights from the following types.	Pendant Light and Installation	150.00	src="../../media/feature-light3.jpg" alt='Pendant Light'
-S1	CAM	Security	Secure your home and office with our security camera and security alarm to alert you when someone breaks into your home.	Security Camera	500.00	src="../../media/camera2.jpg" alt="Security Camera"
-S1	ALR	Security	Secure your home and office with our security camera and security alarm to alert you when someone breaks into your home.	Security Alarm	500.00	src="../../media/securityalarm.jpg" alt="Security Alarm"
+E1	PPT	Electrical	Electrical services such as installation of power points, maintenance of electrical panels, and so on. A minimum of 1 order of service is required to process and include free installation.*	Powerpoint and Installation	200.00	src="media/powerpoint.jpeg" alt="Powerpoint Installation"
+E1	PNL	Electrical	Electrical services such as installation of power points, maintenance of electrical panels, and so on. A minimum of 1 order of service is required to process and include free installation.*	Electrical Panel Maintenance	200.00	src="media/electrical1.jpg" alt="Electrical Panel"
+L1	DWN	Lighting	Installation of your choice of lights from the following types.	Downlight and Installation	150.00	src="media/downlight.jpg" alt="Downlights"
+L1	PEN	Lighting	Installation of your choice of lights from the following types.	Pendant Light and Installation	150.00	src="media/feature-light3.jpg" alt='Pendant Light'
+S1	CAM	Security	Secure your home and office with our security camera and security alarm to alert you when someone breaks into your home.	Security Camera	500.00	src="media/camera2.jpg" alt="Security Camera"
+S1	ALR	Security	Secure your home and office with our security camera and security alarm to alert you when someone breaks into your home.	Security Alarm	500.00	src="media/securityalarm.jpg" alt="Security Alarm"

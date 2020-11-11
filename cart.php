@@ -37,7 +37,7 @@
 <?php
   if(isset($_SESSION['cart'])){
     foreach ($_SESSION["cart"] as $oid => $orderDetails) {
-      // $oid = $orderDetails['oid'];
+     
       $pid = $orderDetails['pid'];
       $serviceTitle = $all_services[$pid][$oid]['Title'];
       $serviceOption = $all_services[$pid][$oid]['Option'];
@@ -96,9 +96,3 @@
 
 
 <?php end_module(); ?>
-<?php
-  // table('GET Data',$_GET);
-  // table('POST Data',$_POST);
-  error_reporting( E_ERROR | E_WARNING | E_PARSE );
-?>
-<?php printMyCode(); ?>

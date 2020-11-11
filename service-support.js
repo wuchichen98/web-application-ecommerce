@@ -3,14 +3,6 @@ function checkCardType() {
   var pattern = /^4(\d ?){12,15}$/;
   // alert(cardNumber);
 
-  // if(cardNumber[0] == 4) {
-  //   alert("lol");
-  //   if(13 <= cardNumber.length <= 16) 
-  //     document.getElementById("card-type").innerHTML = "VISA";
-  // } else {
-  //   document.getElementById("card-type").innerHTML = "Its not a Visa card";
-  }
-
   if(pattern.test(cardNumber)){
     document.getElementById("card-type").innerHTML = "VISA";
   } else {

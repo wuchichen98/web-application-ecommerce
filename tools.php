@@ -109,21 +109,13 @@ $html = <<<"OUTPUT"
       <footer>
         <div>&copy;<script>document.write(new Date().getFullYear());</script> Jefferson Madrid: s3707189, Wuchi Chen: s3716792.</div>
         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+    
         <div><a href="services.txt">Spreadsheet of services</a> <a href="orders.txt">Spreadsheet of recent orders</a></div>
       </footer>
   </body>
 </html>
 OUTPUT;
   echo $html;
-
-  echo "<hr>";
-  echo "GET DATA";
-  preShow($_GET);
-  echo "POST DATA";
-  preShow($_POST);
-  echo "SESSION DATA";
-  preShow($_SESSION);
 }
 
 function services_module() {
@@ -133,7 +125,7 @@ $html = <<<"OUTPUT"
   <a href="?id=E1" class="blackhyperlink"><h2>Electrical</h2>
     <div class="two-row">
       <div class="image-text-container">
-        <img src="./media/powerpoint.jpeg" alt="Powerpoint Installation" />
+        <img src="../../media/powerpoint.jpeg" alt="Powerpoint Installation" />
         <!-- Image from: http://www.smartliving.com.au/media/catalog/product/cache/1/image/bc0328b31da627a51feee80ba06f2230/s/o/sockitz_silver_1.gif -->
           <div class="overlay">
             <div class="description">
@@ -145,7 +137,7 @@ $html = <<<"OUTPUT"
           </div>
       </div>
       <div class="image-text-container">
-        <img src="../electrical2.jpg" alt="Electrical Panel" />
+        <img src="../../media/electrical2.jpg" alt="Electrical Panel" />
         <!-- Image from: https://mistersparkyelectricsc.com/blog/electrical-issues-solutions-electrical-repair-charleston-sc/ -->
           <div class="overlay">
             <div class="description">
@@ -161,7 +153,7 @@ $html = <<<"OUTPUT"
     <a href="?id=L1" class="blackhyperlink"><h2>Lighting</h2>
     <div class="three-row">
       <div class="image-text-container">
-        <img src="../media/downlight.jpg" alt="Downlights" />
+        <img src="../../media/downlight.jpg" alt="Downlights" />
         <!-- Image frmo: https://www.wink.com/products/commercial-electric-smart-led-downlight/ -->
           <div class="overlay">
             <div class="description">
@@ -173,7 +165,7 @@ $html = <<<"OUTPUT"
           </div>
       </div>
       <div class="image-text-container">
-        <img src="../media/light3.png" alt="Feature Lights" />
+        <img src="../../media/light3.png" alt="Feature Lights" />
         <!-- Image from: http://pretamarcher.co/modern-hallway-lighting/modern-hallway-lighting-modern-hallway-lighting-modern-hallway-lighting-image-of-excellent-hallway-ceiling-lighting-ideas-using-unique-pendant/ -->
           <div class="overlay">
             <div class="description">
@@ -185,7 +177,7 @@ $html = <<<"OUTPUT"
           </div>
       </div>
       <div class="image-text-container">
-        <img src="../media/chandelier.jpeg" alt="Chandelier" />
+        <img src="../../media/chandelier.jpeg" alt="Chandelier" />
         <!-- Image from: https://www.brizzo.ca/chateaux-modern-foyer-crystal-chandelier-mirror-stainless-steel-base-12-lights -->
           <div class="overlay">
             <div class="description">
@@ -201,7 +193,7 @@ $html = <<<"OUTPUT"
     <a href="?id=S1" class="blackhyperlink"><h2>Security</h2>
     <div class="two-row">
       <div class="image-text-container">
-        <img src="../media/camera.jpg" alt="Security Camera" height="200" />
+        <img src="../../media/camera.jpg" alt="Security Camera" height="200" />
         <!-- Image from: https://bestbrothersgroup.b-cdn.net/wp-content/uploads/2018/03/surveillance-camera-mounted-on-concrete-wall.jpg -->
           <div class="overlay">
             <div class="description">
@@ -213,7 +205,7 @@ $html = <<<"OUTPUT"
           </div>
       </div>
       <div class="image-text-container">
-        <img src="../media/securityalarm.jpg" alt="Security Alarm" height="200" />
+        <img src="../../media/securityalarm.jpg" alt="Security Alarm" height="200" />
         <!-- Image from: http://lintsecurity.com/blog/alarmed-security-systems -->
           <div class="overlay">
             <div class="description">
