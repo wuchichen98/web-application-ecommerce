@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Default/basic formatting of the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(244,244,244);
+  background-image: linear-gradient(to bottom right, rgba(220, 220, 220), white);
+}
+
+/* Global container - makes it in the middle */
+.global-container {
+  width: 80%;
+  max-width: 1200px;
+  margin:0 auto;
+  overflow: hidden;
+}
+/* Global ul: removes default margin and padding */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Removes the arrow up and down option of numbers input */
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: 'Titillium Web', sans-serif;
+}
+/* Header */
+header {
+  background: rgba(153, 0, 0, 0.8);
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+/* Highlight the current nav user is on */
+header .current{
+  font-weight: bold;
+}
+/* Company name */
+header .brand {
+  float: left;
+  margin:0;
+}
+/* Navigation bar */
+nav {
+  float: right;
+  margin-top: 30px;
+}
+/* nav > ul > li */
+nav li {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(153, 0, 0, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+.dropdown-content > li {
+  clear: both;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Colors the nav link on hover */
+nav a:hover, nav a:focus {
+  color: rgba(153,153,153);
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The front page about section */
+.frontpage {
+  background-image: url('./media/background-homepage2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The text on the middle of front page */
+#company-introduction {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  background-color: rgba(120, 120, 120, 0.9);
+  margin: 130px 100px 150px;
+  padding: 1em;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 2px 0 #35424A;
+
+}
+#company-introduction > p::first-letter,
+#company-vision > p:first-of-type::first-letter {
+  font-size: 200%;
+}
+
+/* Formatting of the text:
+"Range of Services We Provide:""  on index.php */
+.range-services {
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.range-services:hover {
+  color: rgba(153, 0, 0);
+}
+
+#about-section, #services-summary, #additional-section {
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+}
+
+#additional-section {
+  background-image: url('./media/world-map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#company-vision {
+  float: right;
+  text-align: center;
+  width: 60%;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 150px 0;
+  letter-spacing: 0.5px;
+}
+
+/* Get a quote section of index.php */
+.quote {
+  float: left;
+  color: white;
+  background: rgba(53, 66, 74);
+  width: 30%;
+  margin: 100px auto;
+  border-radius: 3%;
+}
+/* Get a quote heading  */
+.quote h2{
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+/* Get a quote form */
+.quote form {
+  margin: 0 30px;
+}
+/* All input type text on get a quote form */
+.quote form input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/* Enquiry textarea box */
+#bigbox {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 12px;
+}
+/* Submit button for getting a quote */
+.quote button {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(112, 107, 107);
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+/* The four brief details of 4 services of the company */
+#services-summary {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* Unordered list containing the 4 services */
+.services-box {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* Each services is displayed as a list */
+.services-box li {
+  width: 220px;
+  height: 330px;
+  display: inline-block;
+}
+/* Details of each service */
+.box p {
+  font-size: 13px;
+  padding: 0 12% 0 12%;
+  line-height: 1.2em;
+}
+/* The thumbnails of all the services */
+.box img {
+  border-radius: 50%;
+}
+
+
+/* Grid style for services.php */
+.two-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+}
+.three-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+#all-services img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* #all-services h2{
+  text-align: center;
+} */
+.image-text-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  background-color:  rgba(153, 0, 0, 0.9);
+  overflow: hidden;
+  color: white;
+  transition: 0.5s ease;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+.image-text-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.description {
+  margin: 10% 5%;
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.overlay > .overlay-heading > h3 {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0%;
+  margin: 0 5px;
+  letter-spacing: 1px;
+}
+
+.description > h3{
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+}
+.blackhyperlink {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+/* Login.php*/
+.login-div {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Slider contains the images and frame for service.php*/
+.slider{
+  float: left;
+	margin-top: 20px;
+	position: relative;
+  width: 450px;
+  height: 450px;
+  background-color: #f4f4f4;
+  border: solid 2px #2c2c2c;
+}
+
+.image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.image-container img{
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#i1, #i2, #i3, #i4, #i5{
+  display: none;
+}
+
+.pre, .nxt{
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  line-height: 450px;
+  color: rgba(88,88,88,.4);
+
+}
+.pre {
+  left:0;
+}
+.nxt {
+  right: 0;
+}
+.pre:hover, .nxt:hover {
+  transition: 0.3s;
+  background: rgba(88,88,88,.4);
+
+}
+
+.nav {
+  height: 10%;
+  bottom: 0%;
+  position: absolute;
+  text-align: center;
+  display: inline;
+  z-index: 99;
+  margin: 0 auto;
+  left: 42%;
+}
+.dots {
+  height: 10px;
+  width: 10px;
+  margin-right: 0 3px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  /* text-align: center; */
+  background: rgba(0,0,0,.6);
+}
+
+#dot1:hover{background: #795548;}
+#dot2:hover{background: #f44336;}
+#dot3:hover{background: #2196F3;}
+#dot4:hover{background: #4CAF50;}
+#dot5:hover{background: red;}
+
+#i1:checked~#one,
+#i2:checked~#two,
+#i3:checked~#three,
+#i4:checked~#four,
+#i5:checked~#five {
+  z-index: 9;
+  animation: scroll 1s ease-in-out;
+}
+
+#i1:checked~.nav #dot1,
+#i2:checked~.nav #dot2,
+#i3:checked~.nav #dot3,
+#i4:checked~.nav #dot4,
+#i5:checked~.nav #dot5 {
+  background: #fff;
+}
+
+.text-content {
+  width: 50%;
+  float: right;
+}
+
+/* Details of the service in text */
+/* Div containing the name of the service */
+.inner-content-title {
+  margin-top: 40px;
+  text-align: center
+}
+/* Main details */
+.inner-content-text {
+  margin: 30px 0;
+  text-align: center;
+}
+/* The form */
+.service-form {
+  font-size: 16px;
+
+}
+.option-model, .quantity, .buy-button{
+  margin: 0 10px 10px;
+  text-align: center;
+}
+.option-model > select {
+  font-size: inherit;
+}
+.quantity > input {
+  font-size: inherit;
+  width: 40px;
+  text-align: center;
+  border-style: groove;
+  background-color: rgba(244,244,244);
+}
+.quantity > button {
+  font-size: inherit;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: gray;
+}
+.buy-button > button {
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to bottom right, rgba(150,0,0), rgba(200,0,0));
+  border-radius: 7px;
+  padding: 5px 20px;
+}
+
+
+/* All styles for login.php */
+/* the div containing the login form */
+.login-form {
+  background: #35424A;
+  padding: 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px #35424A;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1px;
+}
+/* Header of login */
+.login-form h1 {
+  text-align: center;
+  font-weight: 300px;
+  margin: 0 0 40px;
+  letter-spacing: 2px;
+}
+/* Input text format */
+.field-wrap input , .field-wrap textarea{
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  margin: 5px 0 25px;
+  padding: 10px;
+  border: 1px solid #a0b3b0;
+  border-radius: 3px;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  /* font-family: 'Titillium Web', sans-serif; */
+
+}
+/* Align the forgot password link to right */
+.forgot {
+  text-align: right;
+}
+/* Forgot password link  */
+.forgot a {
+  text-decoration: none;
+  color: rgb(214,80,80);
+  font-family: 'Titillium Web', sans-serif;
+}
+/* Effect/transition for forgot password a */
+.forgot a:hover {
+  color: rgb(255,100,100);
+  text-decoration: underline;
+}
+/* log in button */
+.login-button {
+  border: 0;
+  width: 100%;
+  border-radius: 3px;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: #B35044;
+  color: white;
+  transition: all 0.5s ease;
+  font-family: 'Titillium Web', sans-serif;
+}
+/* Login button effects */
+.login-button:hover, .login-button:focus {
+  background: #D85040;
+  cursor: pointer;
+}
+/* Change the vertical alignment of the asterisk (*) */
+.req {
+  vertical-align: super;
+  font-size: 15px;
+}
+
+/* For cart.php exclusive */
+.one-order {
+  clear: both;
+  margin-bottom: 100px;
+}
+.one-order img {
+  float: left;
+  margin-right: 30px;
+}
+.qty-subtotal {
+  float: right;
+  font-weight: bold;
+}
+.qty-subtotal .service-quantity {
+  margin-right: 50px;
+}
+
+#cancel-button, #to-checkout-button {
+  margin-top: 30px;
+  font-size: 30px;
+  float: left;
+  background: #B35044;
+  color: white;
+}
+#to-checkout-button {
+  float: right;
+}
+
+
+/* For checkout.php */
+.checkout-form-container input {
+  width: 50%;
+}
+.checkout-form-container textarea {
+  width: 50%;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+#process-payment {
+  width: 50%;
+  font-size: 30px;
+  float: left;
+  background: #B35044;
+  color: white;
+}
+
+
+/* For receipt.php */
+.company-table {
+  float: left;
+}
+.company-table th, .company-table td {
+  text-align: left;
+  padding: 5px;
+  /* border: 0.5px solid black; */
+  border-bottom: 0.5px solid black;
+  border-bottom-style: dotted;
+}
+.user-table {
+  float:right;
+}
+.user-table th, .user-table td{
+  text-align: left;
+  padding: 5px;
+  /* border: 0.5px solid black; */
+  border-bottom: 0.5px solid black;
+  border-bottom-style: dotted;
+}
+.order-table {
+  clear: both;
+  margin: 170px auto 0;
+  width: 100%;
+}
+.order-table th, .order-table td {
+  border: 0.5px solid black;
+  padding: 10px 5px;
+}
+/* .order-table th {
+  border-left-style: none;
+  border-right-style: none;
+} */
+.total-cost {
+  float: right;
+  font-size: 2em;
+}
+
+/* Media queries: for different width sizes */
+@media screen and (max-width: 1200px) {
+  .global-container {
+    width: 90%;
+  }
+  #company-introduction {
+    margin: 100px 0;
+    padding: 0.4em;
+  }
+  .slider {
+    float:none;
+    margin: 20px auto;
+  }
+  .text-content {
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 840px){
+  header .brand {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header nav {
+    margin: 0 auto;
+  }
+
+  #company-vision {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .quote {
+    float: none;
+    width: 70%;
+  }
+
+}
+@media screen and (max-width: 500px){
+  .two-row, .three-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+  }
+}
